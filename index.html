@@ -1,11 +1,21 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <title>Hello World</title>
-</head>
+<html>
 <body>
   <h1>Hello World!</h1>
   <h3>Hyemin Lee</h3>
 </body>
+
+  <style>
+    h1, h3 { color: black; cursor: pointer; }
+  </style>
+
+  <script>
+    document.querySelector('h1').addEventListener('click', function () {
+      this.style.color = 'red';
+    });
+
+    document.querySelector('h3').addEventListener('click', function () {
+      this.style.color = 'blue';
+    });
+  </script>
+
 </html>
